@@ -12,14 +12,39 @@
             height: 50vmin;
             border: 1px solid black;
             
-            animation: fadeIN .5s;
+            transition: border-radius 0.5s;
+            overflow: hidden;
+            transform-origin: bottom;
+            animation: fadeIN 2s, squeezeDOWN 0.5s 2s, jumpingUP 2s ease-out 2.5s, jumpingDOWN 2s ease-in 4.5s, squeezeDOWN2 1s 6.5s;
         }
-        
+         #robot:hover {
+            border-radius: 50%;
+        }
         @keyframes fadeIN {
             from{opacity: 0;}
             to{opacity: 1;}
         }
         
+        @keyframes squeezeDOWN {
+            from{transform: scaleY(1);}
+            to{transform: scaleY(0.8);}
+        }
+        
+        @keyframes jumpingUP {
+            from{transform: scaleY(0.8) translateY(-20vmin);}
+            to{transform: scaleY(1.20) translateY(-20vmin);}
+        }
+        
+        @keyframes jumpingDOWN {
+            from{transform: translateY(-20vmin);}
+            to{transform: translateY(0);}
+        }
+         @keyframes squeezeDOWN2 {
+            from{transform: scaleY(1);}
+            50%{transform: scaleY(0.5);}
+             to{transform: scaleY(1);}
+        }
+       
         #rect {
             position: absolute;
             top: 50%;
@@ -95,14 +120,13 @@
             transform: skewX(-35deg);
             transform-origin: top right;
             
-            animation: wing01 1s infinte;
+            animation: wing01 1s infinite;
         }
         
         
         @keyframes wing01 {
             from{transform: skewX(-35deg) rotate(0) ;}
-                25% {transform: skewX(-35deg) rotate(20deg) ;}
-                75% {transform: skewX(-35deg) rotate(-20deg) ;}
+                50% {transform: skewX(-35deg) rotate(-20deg) ;}  
                 to{transform: skewX(-35deg) rotate(0) ;}
         }
         #para02 {
@@ -111,8 +135,17 @@
             left: 75%;
             width: 20%;
             height: 10%;
-           
+            border-radius: 0%;
+            transform-origin: left top;
+           animation: wing02 1s infinite;
             transform: skewX(35deg);
+        }
+       
+        
+         @keyframes wing02 {
+            from{transform: skewX(35deg) rotate(0) ;}
+                50% {transform: skewX(35deg) rotate(20deg) ;}
+                to{transform: skewX(35deg) rotate(0) ;}
         }
         
         .accentColor {
