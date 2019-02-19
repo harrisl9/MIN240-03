@@ -1,0 +1,40 @@
+<html>
+<head> </head>
+<style>
+    #rect {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 10vmin;
+        height: 10vmin;
+        background-color: red;
+    }
+</style>
+
+<body>
+<div id = "rect"> </div>
+<script>
+    //alert("hi!");
+    //console.log("hello!!!!");
+    //innerHTML
+    
+    var myRect;
+    myRect = document.querySelector("#rect");
+    myRect.style.backgroundColor = "blue";
+    myRect.style.width = myRandom + "vmin";
+    myRect.style.height = "40vmin";
+    
+    myRect.innerHTML = myRandom;
+    myRect.style.color = "white";
+    myRect.style.fontSize = "15vmin";
+    
+    var myRandom = Math.ceil(Math.random() * 100);
+    console.log(myRandom);
+    
+    myRect.style.fontSize = myRandom + "vmin";
+    myRect.style.textAlign = "center";
+    myrect.style.borderRadius = 50%;
+</script>
+</body>
+</html>
