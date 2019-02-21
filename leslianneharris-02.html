@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<style>
+    #box {
+        position: absolute;
+        top: 25vmin;
+        left: 20vmin;
+        width: 60vmin;
+        height: 60vmin;
+        border: 1px solid black;
+    }
+    #globe {
+        position: absolute;
+        top: 27vmin;
+        left: 25vmin;
+        width: 50vmin;
+        height: 50vmin;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-image: url("https://images.unsplash.com/photo-1454177697940-c43d9f9a7307?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+
+
+        overflow: hidden;
+    }
+
+    #base {
+        position: absolute;
+        top: 71vmin;
+        left: 33vmin;
+        width: 35vmin;
+        height: 12vmin;
+        background-color: hsl(0, 100%, 85%);
+        transform: perspective(4em) rotateX(10deg);
+    }
+
+    #cloud1 {
+        position: absolute;
+        top: 35vmin;
+        left: 50vmin;
+        width: 10vmin;
+        height: 10vmin;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: white;
+        animation: fadeIN 3s infinite;
+
+    }
+
+    #cloud2 {
+        position: absolute;
+        top: 37vmin;
+        left: 55vmin;
+        width: 8vmin;
+        height: 8vmin;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: white;
+        animation: fadeIN 3s infinite;
+
+    }
+
+    #cloud3 {
+        position: absolute;
+        top: 38vmin;
+        left: 47vmin;
+        width: 7vmin;
+        height: 7vmin;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: white;
+        animation: fadeIN 3s infinite;
+
+    }
+    @keyframes fadeIN {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+    #star1 {
+        position: absolute;
+        top: 33vmin;
+        left:40vmin;
+        width: 5vmin;
+        height: 5vmin;
+        background-color: hsl(60, 100%, 90%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation: spin 5s infinite;
+    }
+    #star2 {
+        position: absolute;
+        top: 31vmin;
+        left:58vmin;
+        width: 5vmin;
+        height: 5vmin;
+        background-color: hsl(60, 100%, 90%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation: spin 5s infinite;
+    }
+    #star3 {
+        position: absolute;
+        top: 42vmin;
+        left:40vmin;
+        width: 5vmin;
+        height: 5vmin;
+        background-color: hsl(60, 100%, 90%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation: spin 5s infinite;
+    }
+    #star4 {
+        position: absolute;
+        top: 40vmin;
+        left:65vmin;
+        width: 5vmin;
+        height: 5vmin;
+        background-color: hsl(60, 100%, 90%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation: spin 5s infinite;
+    }
+    #star5 {
+        position: absolute;
+        top: 40vmin;
+        left:30vmin;
+        width: 5vmin;
+        height: 5vmin;
+        background-color: hsl(60, 100%, 90%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation: spin 5s infinite;
+    }
+    @keyframes spin {
+        100% {transform: rotate(360deg);}
+    }
+    #ice1 {
+        position: absolute;
+        top: 57vmin;
+        left: 35vmin;
+        width: 5vmin;
+        height: 5vmin;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: hsl(0, 100%, 85%);        
+    }
+    #ice2 {
+        position: absolute;
+        top: 59vmin;
+        left: 38vmin;
+        width: 5vmin;
+        height: 5vmin;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: hsl(60, 100%, 90%);
+    }
+    #ice3 {
+        position: absolute;
+        top: 60vmin;
+        left: 34vmin;
+        width: 5vmin;
+        height: 5vmin;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: hsl(30, 100%, 25%);
+    }
+    #cone {
+        position: absolute;
+        top: 64vmin;
+        left: 36vmin;
+        width: 5vmin;
+        height: 11vmin;
+        transform: perspective(10vmin) rotateX(-50deg);
+        background-color: hsl(30, 100%, 75%);
+    }
+</style>
+
+<body>
+    <div id ="box"> </div>
+    <div id="globe"> </div>
+    <div id="base"> </div>
+    <div id="cloud1"> </div>
+    <div id="cloud2"> </div>
+    <div id="cloud3"> </div>
+    <div id ="star1"> </div>
+    <div id ="star2"> </div>
+    <div id ="star3"> </div>
+    <div id ="star4"> </div>
+    <div id ="star5"> </div>  
+    <div id ="ice1"> </div>
+    <div id ="ice2"> </div>
+    <div id ="ice3"> </div>
+    <div id ="cone"> </div>
+
+</body>
+</html>
