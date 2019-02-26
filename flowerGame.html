@@ -1,0 +1,110 @@
+<html>
+    
+<style>
+    #startScreen {
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
+        width: 80vw;
+        height: 40vh;
+        background-color: olivedrab;
+    }
+     #gameScreen {
+        position: absolute;
+        top: 5vh;
+        left: 5vw;
+        width: 90vw;
+        height: 90vh;
+        background-color: lightgray;
+        display: none;
+    }
+     #endScreen {
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
+        width: 80vw;
+        height: 40vh;
+        background-color: black;
+        display: none;
+    }
+    #startBIN {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 80%;
+        height: 40%;
+        background-color: yellow;
+        cursor: pointer;
+        user-select: none;
+    }
+    #wateringCan {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        width: 10%;
+        height: 10%;
+        background-color: lightcoral;
+    }
+    #flowerTop {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 10%;
+        height: 10%;
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    </style>
+<body>
+    <div id ="startScreen"> 
+    <div id = "startBIN"> start </div>
+    </div>
+        
+    <div id = "gameScreen"> 
+    <div id = "wateringCan"> </div>
+    <div id = "flowerTop"> </div>
+    </div>
+    <div id = "endScreen"> </div>
+    
+<script>
+    var myStartScreen;
+    myStartScreen = document.querySelector("#startScreen");
+    
+    var myGameScreen;
+    myGameScreen = document.querySelector("#gameScreen");
+    
+    var myStartBIN;
+    myStartBIN = document.querySelector("#startBIN");
+    
+    myStartBIN.style.fontSize = "3em";
+    myStartBIN.style.textAlign = "center";
+    
+    var myWateringCan;
+    myWateringCan = document.querySelector("#wateringCan");
+    myWateringCan.addEventListener("click", growFlower, false);
+    
+    var myFlowerTop;
+    myFlowerTop = document.querySelector("#flowerTop");
+    
+    
+    var myPositionY = 0;
+    function growFlower () {
+        myFlowerTop.style.transform = "translateY("+myPositionY+"%)";
+        myPositionY = myPositionY -20;
+        
+        // myFlowTop.style.transform = `translateY(${myPositionY}%)`;
+    }
+    
+    myStartBIN.addEventListener("click", hideStartShowGame, false);
+    
+    function hideStartShowGame() {
+        myStartScreen.style.display = "none";
+        myGameScreen.style.display = "block";
+        
+    }
+    
+</script>
+    
+    
+</body>
+</html>
