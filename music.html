@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+<style>
+    .material-icons.md-300 { font-size: 30vmin;}
+</style>
+
+<body>
+<audio id= "jazz" src="./music02.mp3"> </audio>
+    <i id="playICON" class="material-icons md-300">
+play_circle_filled_white
+</i>
+<script>
+    var myMusic = document.querySelector("#jazz");
+    myMusic.load();
+    
+    var myPlay = document.querySelector(".material-icons.md-300");
+    
+    var playForte = 0;
+    myPlay.addEventListener("click", playMusic, false);
+    
+    window.addEventListener("focus", playLoud, false);
+    window.addEventListener("blur", playSoft, false);
+    
+    
+    function playMusic() {
+        myMusic.play();   
+    }
+    function playLoud() {
+        if (playForte == 0) {
+            myMusic.volume = 1;
+            playForte = 1;
+        } else {
+            myMusic.volume = 1;
+        }
+    }
+    function playSoft() {
+        myMusic.volume = 0.2;
+    }
+    
+</script>
+</body>
+</html>
