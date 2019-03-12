@@ -1,0 +1,250 @@
+<html>
+<head> </head>
+<style>
+    #startScreen {
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
+        width: 80vw;
+        height: 40vh;
+        background-color: red;
+    }
+
+    #gameScreen {
+        position: absolute;
+        top: 5vh;
+        left: 5vw;
+        width: 90vw;
+        height: 90vh;
+        background-color: white;
+        display: none;
+        border: 1px solid black;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 2em;
+
+    }
+
+    #endScreen {
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
+        width: 80vw;
+        height: 40vh;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 3em;
+        display: none;
+        user-select: none;
+    }
+
+    #workflowScreen {
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
+        width: 80vw;
+        height: 40vh;
+        background-color: lightgray;
+        text-align: center;
+        display: none;
+        font-size: 2em;
+        
+    }
+
+    #workflowBIN {
+        position: absolute;
+        top: 45vh;
+        left: 30vw;
+        width: 20vw;
+        height: 10vh;
+        background-color: red;
+        cursor: pointer;
+        user-select: none;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    #startBIN {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 80%;
+        height: 40%;
+        background-color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    #grinch {
+        position: absolute;
+        top: 10%;
+        left: 35%;
+        width: 40vmin;
+        height: 80vmin;
+        background-image: url("https://sitejerk.com/images/grinch-transparent-2.png");
+        background-size: cover;
+    }
+
+    #heart {
+        position: absolute;
+        top: 44vmin;
+        left: 77vmin;
+        width: 1.9vmin;
+        height: 2vmin;
+        background-image: url("https://clipart.info/images/ccovers/1518056315Dark-Red-Heart-Transparent-Background.png");
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    #exitBIN {
+        position: absolute;
+        top: 45vh;
+        left: 30vw;
+        width: 20vw;
+        height: 10vh;
+        background-color: red;
+        cursor: pointer;
+        user-select: none;
+        text-align: center;
+        font-size: 2em;
+        border-radius: 50%;
+    }
+
+    #endBIN {
+        position: absolute;
+        top: 5vh;
+        left: 75vw;
+        width: 10vw;
+        height: 5vh;
+        background-color: red;
+        cursor: pointer;
+        user-select: none;
+        text-align: center;
+        font-size: 1em;
+        border-radius: 50%;
+    }
+
+    #returnBIN {
+        position: absolute;
+        top: 20vh;
+        left: 30vw;
+        width: 20vw;
+        height: 15vh;
+        background-color: white;
+        cursor: pointer;
+        user-select: none;
+        text-align: center;
+        color: black;
+
+    }
+</style>
+
+<body>
+    <div id="startScreen">
+        <div id="startBIN"> start </div>
+        <div id="workflowBIN"> see workflow
+
+        </div>
+    </div>
+    <div id="workflowScreen"> Start Screen ----> Game Screen ----> End Screen ----> Start Screen <br> ^----> Workflow Screen ----> Start Screen 
+        <div id="exitBIN"> exit </div>
+    </div>
+    <div id="gameScreen"> Click on the Grinch's small heart to make it bigger!
+        <div id="grinch"> </div>
+        <div id="heart"> </div>
+        <div id="endBIN"> exit game </div>
+    </div>
+    <div id="endScreen"> Thanks for playing!
+        <div id="returnBIN"> Return to start menu </div>
+    </div>
+
+    <script>
+        var myStartScreen;
+        myStartScreen = document.querySelector("#startScreen");
+
+        var myGameScreen;
+        myGameScreen = document.querySelector("#gameScreen");
+
+        var myWorkflowScreen;
+        myWorkflowScreen = document.querySelector("#workflowScreen");
+
+        var myEndScreen;
+        myEndScreen = document.querySelector("#endScreen");
+
+
+        var myStartBIN;
+        myStartBIN = document.querySelector("#startBIN");
+
+        myStartBIN.style.fontSize = "3em";
+        myStartBIN.style.textAlign = "center";
+
+        var myGrinch;
+        myGrinch = document.querySelector("#grinch");
+
+        var myHeart;
+        myHeart = document.querySelector("#heart");
+        myHeart.addEventListener("click", growHeart, false);
+
+        var myWorkflowBIN;
+        myWorkflowBIN = document.querySelector("#workflowBIN");
+
+        var myExitBIN;
+        myExitBIN = document.querySelector("#exitBIN");
+
+        var myEndBIN;
+        myEndBIN = document.querySelector("#endBIN");
+
+        var myReturnBIN;
+        myReturnBIN = document.querySelector("#returnBIN");
+
+
+        var Size1 = 1;
+        var Size2 = 1;
+
+        function growHeart() {
+            myHeart.style.transform = "scale(" + Size1 + "," + Size2 + ")";
+            Size1 += 1;
+            Size2 += 1;
+        }
+
+        myStartBIN.addEventListener("click", hideStartShowGame, false);
+        myWorkflowBIN.addEventListener("click", hideStartShowWorkflow, false);
+
+        myEndBIN.addEventListener("click", hideGameShowEnd, false);
+        myExitBIN.addEventListener("click", hideWorkflowShowStart, false);
+
+        myReturnBIN.addEventListener("click", returnToStart, false);
+
+
+        function hideStartShowGame() {
+            myStartScreen.style.display = "none";
+            myGameScreen.style.display = "block";
+
+        }
+
+        function hideStartShowWorkflow() {
+            myStartScreen.style.display = "none";
+            myWorkflowScreen.style.display = "block";
+        }
+
+        function hideGameShowEnd() {
+            myGameScreen.style.dislplay = "none";
+            myEndScreen.style.display = "block";
+        }
+
+        function hideWorkflowShowStart() {
+            myWorkflowScreen.style.display = "none";
+            myStartScreen.style.display = "block";
+        }
+
+        function returnToStart() {
+            myEndScreen.style.display = "none";
+            myGameScreen.style.display = "none";
+            myStartScreen.style.display = "block";
+        }
+    </script>
+
+
+</body>
+</html>
