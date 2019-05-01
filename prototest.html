@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Lobster+Two" rel="stylesheet">
+    <title> Disney Explorer </title>
+</head>
+<style>
+    body {
+        background-color: #ffff80;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Fugaz One', cursive;
+        font-size: 4em;
+        color: #000000;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #000000;
+        float: inherit;
+
+    }
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: gray;
+        color: white;
+    }
+
+    .largePicture {
+        height: 80vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .largePictureCaption {
+        text-align: center;
+        color: white;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        font-size: 25px;
+
+    }
+
+    .post {
+        text-align: center;
+        background-color: white;
+        color: black;
+
+        width: 50%;
+        background-position: center;
+        height: 20%;
+        border: 1px solid #000000;
+        padding: 5px;
+        left: 25%;
+        overflow: auto;
+        float: inherit;
+        position: relative;
+    }
+
+    #prototypeScreen {
+        width: 100%;
+        height: 100%;
+        top: 0vh;
+        left: 0vw;
+        position: absolute;
+    }
+
+    #newsScreen {
+        width: 100%;
+        height: 100%;
+        top: 0vh;
+        left: 0vw;
+        position: absolute;
+    }
+
+    #noticationScreen {
+        width: 100%;
+        height: 100%;
+        top: 0vh;
+        left: 0vw;
+        position: absolute;
+    }
+
+    #messagesScreen {
+        width: 100%;
+        height: 100%;
+        top: 0vh;
+        left: 0vw;
+        position: absolute;
+    }
+
+    #createAccountScreen {
+        width: 100%;
+        height: 100%;
+        top: 0vh;
+        left: 0vw;
+        position: absolute;
+    }
+
+</style>
+
+<body>
+    <div id="prototypeScreen">
+        <h1> Disney Explorer </h1>
+
+        <div class="topnav">
+            <a class="active" id="home">Home</a>
+            <a id="news">News</a>
+            <a id="notifications">Notifications</a>
+            <a id="messages">Messages</a>
+            <a style="float: right" id=createAcc> Create Account</a>
+        </div>
+
+        <div class="largePicture" style="background-image: url('https://images.unsplash.com/photo-1552004413-f523054528e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80')">
+            <div class="largePictureCaption">
+                <h2 style="font-size: 3em">Home</h2>
+                <p></p>
+            </div>
+        </div>
+        <br> <br>
+        <div class="post">
+            <p> It rains in Florida…a lot! Let me tell you something. I have done every type of umbrella/poncho. I packed the giant ones but they were a pain to take on the planes and the Disney buses. Also, I did the cheap ones from Disney (cheap made, not price) that broke after a few days. The best umbrella to pack is this one from <a href="https://www.amazon.com/EEZ-Y-Compact-Umbrella-Windproof-Construction/dp/B019VGIP28/ref=as_li_ss_tl?ie=UTF8&qid=1517836112&sr=8-1-spons&keywords=strong+mini+umbrella&psc=1&linkCode=sl1&tag=globamunch-20&linkId=12c0c4448bad672084022257b4a81127">amazon.com</a>. I have had it for years and every time I use it, whether its to block the sun or the rain. </p>
+        </div>
+        <br>
+        <div class="post">
+            <p> Don’t want to pack that big stroller on your trip, save some serious dough by renting from an offsite stoller company. We recommend Kingdom Strollers – They are Disney Verified, will save you a ton of money and deliver the stroller to your room! </p>
+        </div>
+        <br>
+        <div class="post">
+            <p> As you are on your way to Harambe Village at Animal Kingdom, keep your eye out for the last path to the right after the Tree of Life and before the bridge to Africa. This is the “secret path.” The front of path is filled with a lot of vegetation so you might have to look hard. Yes, it is open to the public. Follow the path for a close look at the Tree of Life and for some great photo spots. Not many people know about this path so you will have a lot of time to yourself and will not be interruptions when you are taking photos.</p>
+        </div>
+        <br>
+        <div class="post">
+            <p>Avoid the park that is open for the early Extra Magic Hour. It’s nice for the first hour or so, but by 11:00 that park is usually packed, while the other parks are less crowded. If you are staying on Disney property, maybe go in for the Extra Magic Hour and then park hop to a less crowded park by 11.</p>
+        </div>
+    </div>
+
+    <div id="newsScreen">
+        <h1> Disney Explorer </h1>
+
+        <div class="topnav">
+            <a id="home">Home</a>
+            <a class="active" id= "news">News</a>
+            <a id="notifications">Notifications</a>
+            <a id="messages">Messages</a>
+            <a style="float: right" id="createacc"> Create Account</a>
+        </div>
+
+        <div class="largePicture" style="background-image: url('https://images.unsplash.com/photo-1455906876003-298dd8c44ec8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1527&q=80')">
+            <div class="largePictureCaption">
+                <h2 style="font-size: 3em">News</h2>
+                <p> Find exclusive news and secret events that you might not find out through Disney. </p>
+            </div>
+        </div>
+        <br> <br>
+        <div class="post">
+            <p> *some post about disney* </p>
+        </div>
+        <br>
+        <div class="post">
+            <p> *some other post about disney* </p>
+        </div>
+        <br>
+        <div class="post">
+            <p> oh hey look its another post about disney but this one is going to be longer so i can see how the page looks when there are larger post :))) ayy yay ya i hate school and i have a lot of work due today, hey that kinda rhymed or however you spell it, brackets doesnt have a spell chec or anything like that</p>
+        </div>
+        <br>
+        <div class="post">
+            <p>Omg can you believe it it's another post</p>
+        </div>
+    </div>
+
+    <div id="notificationScreen">
+        <h1> Disney Explorer </h1>
+
+        <div class="topnav">
+            <a>Home</a>
+            <a>News</a>
+            <a class="active">Notifications</a>
+            <a>Messages</a>
+            <a style="float: right"> Create Account</a>
+        </div>
+
+        <div class="largePicture" style="background-image: url('https://images.unsplash.com/photo-1519408930538-2c24bffbc82f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=982&q=80')">
+            <div class="largePictureCaption">
+                <h2 style="font-size: 3em">Notifications</h2>
+                <p> Find notifications such as upcoming special events and feedback from your recent posts. </p>
+            </div>
+        </div>
+        <br> <br>
+        <div class="post">
+            <p> *some post about disney* </p>
+        </div>
+        <br>
+        <div class="post">
+            <p> *some other post about disney* </p>
+        </div>
+        <br>
+        <div class="post">
+            <p> oh hey look its another post about disney but this one is going to be longer so i can see how the page looks when there are larger post :))) ayy yay ya i hate school and i have a lot of work due today, hey that kinda rhymed or however you spell it, brackets doesnt have a spell chec or anything like that</p>
+        </div>
+        <br>
+        <div class="post">
+            <p>Omg can you believe it it's another post</p>
+        </div>
+    </div>
+    <div id="messagesScreen">
+        <h1> Disney Explorer </h1>
+
+        <div class="topnav">
+            <a id="home">Home</a>
+            <a id="news">News</a>
+            <a id="notifications">Notifications</a>
+            <a class="active" id="messages">Messages</a>
+            <a style="float: right" id="createacc"> Create Account</a>
+        </div>
+
+        <div class="largePicture" style="background-image: url('https://images.unsplash.com/photo-1540999960887-3821cac1ecfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')">
+            <div class="largePictureCaption">
+                <h2 style="font-size: 3em">Messages</h2>
+                <p> Find direct messages from people who you may run into at the parks or who also use the application. </p>
+            </div>
+        </div>
+        <br> <br>
+        <div class="post">
+            <p> *some post about disney* </p>
+        </div>
+        <br>
+        <div class="post">
+            <p> *some other post about disney* </p>
+        </div>
+        <br>
+        <div class="post">
+            <p> oh hey look its another post about disney but this one is going to be longer so i can see how the page looks when there are larger post :))) ayy yay ya i hate school and i have a lot of work due today, hey that kinda rhymed or however you spell it, brackets doesnt have a spell chec or anything like that</p>
+        </div>
+        <br>
+        <div class="post">
+            <p>Omg can you believe it it's another post</p>
+        </div>
+    </div>
+
+    <div id="createAccountScreen">
+        <h1> Disney Explorer </h1>
+
+        <div class="topnav">
+            <a id="home">Home</a>
+            <a id="news">News</a>
+            <a id="notifications">Notifications</a>
+            <a id="messages">Messages</a>
+            <a class="active" id="createacc"> Create Account</a>
+        </div>
+        <form action="">
+            <br><br><br>
+            <fieldset style="font-size:20px; background-color: white;">
+                <legend>
+                    <h2>New Account:</h2>
+                </legend>
+                Email Address: <br>
+                <input type="text" name="Email" value="Email">
+                <br>
+                Username: <br>
+                <input type="text" name="Username" value="Username">
+                <br>
+                Password: <br>
+                <input type="password" name="Password" value="Password">
+                <br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+
+<script>
+    var MyPrototypeScreen = document.querySelector("#prototypeScreen");
+    
+    var MyNewsScreen = document.querySelector("#newsScreen");
+    
+    var MyNotificationsScreen = document.querySelector("#notificationsScreen");
+    
+    var MyMessagesScreen = document.querySelector("#messagesScreen");
+    
+    var MyCreateAccountScreen = document.querySelector("#createAccountScreen");
+    
+    
+    var myHome = document.querySelector("#home");
+    var myNews = document.querySelector("#news");
+    var myNotifications = document.querySelector("#notifications");
+    var myMessages = document.querySelector("#messages");
+    var myCreate = document.querySelector("#createacc");
+    
+    
+    myHome.addEventListener("click", showPrototypeScreen1, false);
+    myNews.addEventListener("click", showNewsScreen1, false);
+    myNotifications.addEventListener("click", showNotificationsScreen1, false);
+    myMessages.addEventListener("click", showMessagesScreen1, false);
+    myCreate.addEventListener("click", showCreateAccountScreen1, false);
+    
+    
+    
+    
+    
+    
+    
+    function showPrototypeScreen1() {
+        MyCreateAccountScreen.style.display="none";
+        MyNewsScreen.style.display="none";
+        MyMessagesScreen.style.display="none";
+        MyNotificationsScreen.style.display="none";
+        MyPrototypeScreen.style.display="block";
+    }
+    function showNewsScreen1() {
+        MyCreateAccountScreen.style.display="none";
+        MyNewsScreen.style.display="block";
+        MyMessagesScreen.style.display="none";
+        MyNotificationsScreen.style.display="none";
+        MyPrototypeScreen.style.display="none";
+    }
+    function showNotificationsScreen1() {
+        MyCreateAccountScreen.style.display="none";
+        MyNewsScreen.style.display="none";
+        MyMessagesScreen.style.display="none";
+        MyNotificationsScreen.style.display="block";
+        MyPrototypeScreen.style.display="none";
+    }
+    function showMessagesScreen1() {
+        MyCreateAccountScreen.style.display="none";
+        MyNewsScreen.style.display="none";
+        MyMessagesScreen.style.display="block";
+        MyNotificationsScreen.style.display="none";
+        MyPrototypeScreen.style.display="none";
+    }
+    function showCreateAccountScreen1() {
+        MyCreateAccountScreen.style.display="block";
+        MyNewsScreen.style.display="none";
+        MyMessagesScreen.style.display="none";
+        MyNotificationsScreen.style.display="none";
+        MyPrototypeScreen.style.display="none";
+    }
+    
+    
+    </script>
+</body>
+
+</html>
