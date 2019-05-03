@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Lobster+Two" rel="stylesheet">
     <title> Disney Explorer </title>
 </head>
-    
+
 <style>
-    
+
     body {
         background-color: #ffff80;
         margin: 0;
@@ -58,11 +58,12 @@
 
     .largePictureCaption {
         text-align: center;
-        color: white;
-        position: absolute;
+        color: whitesmoke;
+        position: relative;
         width: 100%;
-        top: 25%;
+        top: 50%;
         font-size: 25px;
+        font-weight: 400;
 
     }
 
@@ -128,17 +129,17 @@
 </style>
 
 <body>
-    <div id="prototypeScreen" style="display: block;">
-        <h1> Disney Explorer </h1>
 
-        <div class="topnav">
-            <a class="active" id="home">Home</a>
-            <a id="news">News</a>
-            <a id="notifications">Notifications</a>
-            <a id="messages">Messages</a>
-            <a style="float: right" id=createAcc> Create Account</a>
-        </div>
+    <h1> Disney Explorer </h1>
 
+    <div class="topnav">
+        <a id="home">Home</a>
+        <a id="news">News</a>
+        <a id="notifications">Notifications</a>
+        <a id="messages">Messages</a>
+        <a style="float: right" id=createAcc> Create Account</a>
+    </div>
+    <div id="prototypeScreen" display="block">
         <div class="largePicture" style="background-image: url('https://images.unsplash.com/photo-1552004413-f523054528e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80')">
             <div class="largePictureCaption">
                 <h2 style="font-size: 3em">Home</h2>
@@ -146,8 +147,8 @@
             </div>
         </div>
         <br> <br>
-        
-        
+
+
         <div class="post">
             <p> It rains in Florida…a lot! Let me tell you something. I have done every type of umbrella/poncho. I packed the giant ones but they were a pain to take on the planes and the Disney buses. Also, I did the cheap ones from Disney (cheap made, not price) that broke after a few days. The best umbrella to pack is this one from <a href="https://www.amazon.com/EEZ-Y-Compact-Umbrella-Windproof-Construction/dp/B019VGIP28/ref=as_li_ss_tl?ie=UTF8&qid=1517836112&sr=8-1-spons&keywords=strong+mini+umbrella&psc=1&linkCode=sl1&tag=globamunch-20&linkId=12c0c4448bad672084022257b4a81127">amazon.com</a>. I have had it for years and every time I use it, whether its to block the sun or the rain. - Created by <b>CoolMom</b></p>
         </div>
@@ -165,16 +166,7 @@
         </div>
     </div>
 
-    <div id="newsScreen" style="display: none;">
-        <h1> Disney Explorer </h1>
-
-        <div class="topnav">
-            <a id="home">Home</a>
-            <a class="active" id= "news">News</a>
-            <a id="notifications">Notifications</a>
-            <a id="messages">Messages</a>
-            <a style="float: right" id="createacc"> Create Account</a>
-        </div>
+    <div id="newsScreen" display="none">
 
         <div class="largePicture" style="background-image: url('https://images.unsplash.com/photo-1455906876003-298dd8c44ec8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1527&q=80')">
             <div class="largePictureCaption">
@@ -187,14 +179,14 @@
             <h3> Are you ready?</h3>
             <p> Are you ready for cleaner air, clearer walkways... and huge queues for Guest Relations at Disney's theme parks tomorrow?
 
-As we reported first last month, the Disneyland and Walt Disney World resorts will ban smoking, wagons and oversized strollers starting tomorrow, May 1. Visitors who wish to smoke or vape will be asked to leave the security zones inside the parks, and the smoking ban also extends to Disney's shopping districts: Downtown Disney in California and Disney Springs in Florida. </p>
+                As we reported first last month, the Disneyland and Walt Disney World resorts will ban smoking, wagons and oversized strollers starting tomorrow, May 1. Visitors who wish to smoke or vape will be asked to leave the security zones inside the parks, and the smoking ban also extends to Disney's shopping districts: Downtown Disney in California and Disney Springs in Florida. </p>
         </div>
         <br>
         <div class="post">
             <h3> New Resturant</h3>
             <p> Disney announced on Tuesday a new restaurant is set to open at Toy Story Land at Disney's Hollywood Studios.
 
-Visitors at the Roundup Rodeo BBQ restaurant will get to enjoy a meal with all their favorite characters from the movie. </p>
+                Visitors at the Roundup Rodeo BBQ restaurant will get to enjoy a meal with all their favorite characters from the movie. </p>
         </div>
         <br>
         <div class="post">
@@ -204,23 +196,14 @@ Visitors at the Roundup Rodeo BBQ restaurant will get to enjoy a meal with all t
         <br>
     </div>
 
-    <div id="notificationScreen" style="display: none;">
-        <h1> Disney Explorer </h1>
-
-        <div class="topnav">
-            <a id="home">Home</a>
-            <a id ="news">News</a>
-            <a class="active" id="notifications">Notifications</a>
-            <a id="messages">Messages</a>
-            <a style="float: right" id="createacc"> Create Account</a>
-        </div>
-
+    <div id="notificationScreen" display="none">
         <div class="largePicture" style="background-image: url('https://images.unsplash.com/photo-1519408930538-2c24bffbc82f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=982&q=80')">
             <div class="largePictureCaption">
                 <h2 style="font-size: 3em">Notifications</h2>
                 <p> Find notifications such as upcoming special events and feedback from your recent posts. </p>
             </div>
         </div>
+
         <br> <br>
         <div class="post">
             <p> <b>MapleFam</b> just responded to your post!<br> "Great Idea!" </p>
@@ -234,16 +217,7 @@ Visitors at the Roundup Rodeo BBQ restaurant will get to enjoy a meal with all t
             <p><b>ApplePair</b> just followed you! Follow them back to see their posts! </p>
         </div>
     </div>
-    <div id="messagesScreen" style="display: none;">
-        <h1> Disney Explorer </h1>
-
-        <div class="topnav">
-            <a id="home">Home</a>
-            <a id="news">News</a>
-            <a id="notifications">Notifications</a>
-            <a class="active" id="messages">Messages</a>
-            <a style="float: right" id="createacc"> Create Account</a>
-        </div>
+    <div id="messagesScreen" display="none">
 
         <div class="largePicture" style="background-image: url('https://images.unsplash.com/photo-1540999960887-3821cac1ecfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')">
             <div class="largePictureCaption">
@@ -265,20 +239,11 @@ Visitors at the Roundup Rodeo BBQ restaurant will get to enjoy a meal with all t
         </div>
         <br>
         <div class="post">
-            <p>My daughter loved the shirt you were wearing in the picture you just posted! Where did you get it from? - Sent From <b>Disney Geek</b></p>
+            <p>My daughter loved the shirt you were wearing in the picture you just posted! Where did you get it from? - Sent by <b>Disney Geek</b></p>
         </div>
     </div>
 
-    <div id="createAccountScreen" style="display: none;">
-        <h1> Disney Explorer </h1>
-
-        <div class="topnav">
-            <a id="home">Home</a>
-            <a id="news">News</a>
-            <a id="notifications">Notifications</a>
-            <a id="messages">Messages</a>
-            <a class="active" id="createacc" style="float: right"> Create Account</a>
-        </div>
+    <div id="createAccountScreen" display="none">
         <form action="">
             <br><br><br>
             <fieldset style="font-size:20px; background-color: white;">
@@ -299,78 +264,80 @@ Visitors at the Roundup Rodeo BBQ restaurant will get to enjoy a meal with all t
         </form>
     </div>
 
-<script>
-    var MyPrototypeScreen = document.querySelector("#prototypeScreen");
-    
-    var MyNewsScreen = document.querySelector("#newsScreen");
-    
-    var MyNotificationsScreen = document.querySelector("#notificationScreen");
-    
-    var MyMessagesScreen = document.querySelector("#messagesScreen");
-    
-    var MyCreateAccountScreen = document.querySelector("#createAccountScreen");
-    
-    
-    var myHome = document.querySelector("#home");
-    var myNews = document.querySelector("#news");
-    var myNotifications = document.querySelector("#notifications");
-    var myMessages = document.querySelector("#messages");
-    var myCreate = document.querySelector("#createacc");
-    
-    
-    myHome.addEventListener("click", showPrototypeScreen1, false);
-    myNews.addEventListener("click", showNewsScreen1, false);
-    myNotifications.addEventListener("click", showNotificationsScreen1, false);
-    myMessages.addEventListener("click", showMessagesScreen1, false);
-    myCreate.addEventListener("click", showCreateAccountScreen1, false);
-    
-    
-    
-    
-    
-    
-    
-    function showPrototypeScreen1() {
-        MyCreateAccountScreen.style.display="none";
-        MyNewsScreen.style.display="none";
-        MyMessagesScreen.style.display="none";
-        MyNotificationsScreen.style.display="none";
-        MyPrototypeScreen.style.display="block";
-    }
-    function showNewsScreen1() {
-        MyCreateAccountScreen.style.display="none";
-        MyNewsScreen.style.display="block";
-        MyMessagesScreen.style.display="none";
-        MyNotificationsScreen.style.display="none";
-        MyPrototypeScreen.style.display="none";
-    }
-    function showNotificationsScreen1() {
-        MyCreateAccountScreen.style.display="none";
-        MyNewsScreen.style.display="none";
-        MyMessagesScreen.style.display="none";
-        MyNotificationsScreen.style.display="block";
-        MyPrototypeScreen.style.display="none";
-    }
-    function showMessagesScreen1() {
-        MyCreateAccountScreen.style.display="none";
-        MyNewsScreen.style.display="none";
-        MyMessagesScreen.style.display="block";
-        MyNotificationsScreen.style.display="none";
-        MyPrototypeScreen.style.display="none";
-    }
-    function showCreateAccountScreen1() {
-        MyCreateAccountScreen.style.display="block";
-        MyNewsScreen.style.display="none";
-        MyMessagesScreen.style.display="none";
-        MyNotificationsScreen.style.display="none";
-        MyPrototypeScreen.style.display="none";
-    }
-    
-    
+    <script>
+        var MyPrototypeScreen = document.querySelector("#prototypeScreen");
+
+        var MyNewsScreen = document.querySelector("#newsScreen");
+
+        var MyNotificationsScreen = document.querySelector("#notificationScreen");
+
+        var MyMessagesScreen = document.querySelector("#messagesScreen");
+
+        var MyCreateAccountScreen = document.querySelector("#createAccountScreen");
+
+
+        var myHome = document.querySelector("#home");
+        var myNews = document.querySelector("#news");
+        var myNotifications = document.querySelector("#notifications");
+        var myMessages = document.querySelector("#messages");
+        var myCreate = document.querySelector("#createAcc");
+
+
+        myHome.addEventListener("click", showPrototypeScreen1, false);
+        myNews.addEventListener("click", showNewsScreen1, false);
+        myNotifications.addEventListener("click", showNotificationsScreen1, false);
+        myMessages.addEventListener("click", showMessagesScreen1, false);
+        myCreate.addEventListener("click", showCreateAccountScreen1, false);
+
+
+
+
+
+
+
+        function showPrototypeScreen1() {
+            MyCreateAccountScreen.style.display = "none";
+            MyNewsScreen.style.display = "none";
+            MyMessagesScreen.style.display = "none";
+            MyNotificationsScreen.style.display = "none";
+            MyPrototypeScreen.style.display = "block";
+        }
+
+        function showNewsScreen1() {
+            MyCreateAccountScreen.style.display = "none";
+            MyNewsScreen.style.display = "block";
+            MyMessagesScreen.style.display = "none";
+            MyNotificationsScreen.style.display = "none";
+            MyPrototypeScreen.style.display = "none";
+        }
+
+        function showNotificationsScreen1() {
+            MyCreateAccountScreen.style.display = "none";
+            MyNewsScreen.style.display = "none";
+            MyMessagesScreen.style.display = "none";
+            MyNotificationsScreen.style.display = "block";
+            MyPrototypeScreen.style.display = "none";
+        }
+
+        function showMessagesScreen1() {
+            MyCreateAccountScreen.style.display = "none";
+            MyNewsScreen.style.display = "none";
+            MyMessagesScreen.style.display = "block";
+            MyNotificationsScreen.style.display = "none";
+            MyPrototypeScreen.style.display = "none";
+        }
+
+        function showCreateAccountScreen1() {
+            MyCreateAccountScreen.style.display = "block";
+            MyNewsScreen.style.display = "none";
+            MyMessagesScreen.style.display = "none";
+            MyNotificationsScreen.style.display = "none";
+            MyPrototypeScreen.style.display = "none";
+        }
+
     </script>
 </body>
 
 </html>
-
 
 
